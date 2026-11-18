@@ -244,10 +244,28 @@ const GALLERY=[["Low fade","low"],["Mid fade","mid"],["High fade","high"],["Cort
 const TEAM=[["Rafael Costa","Degradê e freestyle","Dez anos de cadeira. Referência em transições limpas.","rafael"],["Bruno Alves","Barba e navalha","Especialista em barba desenhada e toalha quente.","bruno"],["Diego Martins","Corte social","Cortes clássicos e acabamento de precisão.","diego"]];
 const REVIEWS=[["Melhor degradê que já fiz. Saí com a certeza de que volto todo mês.","Lucas M."],["Ambiente impecável e o horário foi respeitado à risca.","André P."],["O Bruno entende de barba como poucos. Atendimento nota dez.","Thiago S."]];
 /* fotos: coloque os arquivos na pasta img/ do projeto. Sem arquivo, aparece um fundo de luz. */
-const PHOTOS={hero:"img/hero.jpg",exp1:"img/ambiente.jpg",exp2:"img/cadeira.jpg"};
-SERVICES.forEach(s=>PHOTOS["s_"+s[3]]="img/servico-"+s[3]+".jpg");
-GALLERY.forEach(g=>PHOTOS["g_"+g[1]]="img/corte-"+g[1]+".jpg");
-TEAM.forEach(t=>PHOTOS["t_"+t[3]]="img/barbeiro-"+t[3]+".jpg");
+const photo=(id,w=1200)=>`https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&q=85`;
+const PHOTOS={
+ hero:photo("1621605815971-fbc98d665033",1800),
+ exp1:photo("1585747860715-2ba37e788b70"),
+ exp2:photo("1503951914875-452162b0f3f1"),
+ s_corte:photo("1621605815971-fbc98d665033"),
+ s_fade:photo("1599351431202-1e0f0137899a"),
+ s_barba:photo("1622286342621-4bd786c2447c"),
+ s_combo:photo("1503951914875-452162b0f3f1"),
+ s_pigmento:photo("1599351431202-1e0f0137899a"),
+ s_sobrancelha:photo("1621605815971-fbc98d665033"),
+ s_hidratacao:photo("1585747860715-2ba37e788b70"),
+ g_low:photo("1621605815971-fbc98d665033"),
+ g_mid:photo("1599351431202-1e0f0137899a"),
+ g_high:photo("1622286342621-4bd786c2447c"),
+ g_social:photo("1503951914875-452162b0f3f1"),
+ g_free:photo("1585747860715-2ba37e788b70"),
+ g_barba2:photo("1622286342621-4bd786c2447c"),
+ t_rafael:photo("1500648767791-00dcc994a43e"),
+ t_bruno:photo("1507003211169-0a1dd7228f2d"),
+ t_diego:photo("1535713875002-d1d0cf377a4e")
+};
 /* gancho para banco de dados (Supabase, Firebase, API própria) */
 async function saveBooking(data){/* await fetch("/api/agendamentos",{method:"POST",body:JSON.stringify(data)}); */return true}
 
