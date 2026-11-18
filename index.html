@@ -1,35 +1,367 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#050505">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Maison Aurum Barbearia | Seu estilo. Sua identidade.</title>
-<meta name="description" content="Barbearia premium: corte, degradê, barba e experiência exclusiva. Agende seu horário.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://images.unsplash.com"><link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@500;700&family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Barbearia premium: corte, degradê, barba e experiência exclusiva. Agende seu horário online.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;1,500&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#050505;--bg2:#0c0a07;--gold:#c9a45c;--gold2:#f1d98f;--tx:#f4f0e8;--mut:#a39d90;--line:rgba(201,164,92,.28);--serif:'Bodoni Moda',Georgia,serif;--sans:Manrope,system-ui,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:75px;overflow-x:clip}body{margin:0;background:var(--bg);color:var(--tx);font:300 16px/1.65 var(--sans);overflow-x:clip}h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05}a{color:inherit;text-decoration:none}button,input{font:inherit}:focus-visible{outline:2px solid var(--gold2);outline-offset:4px}section{position:relative;padding:clamp(80px,12vw,155px) clamp(20px,6vw,90px)}.wrap{max-width:1200px;margin:auto}h2{font-size:clamp(2.3rem,5.5vw,4.5rem);margin:0 0 20px}.lead{color:var(--mut);max-width:55ch}.gold{background:linear-gradient(120deg,#8a6a2c,#f1d98f 45%,#c9a45c 70%,#8a6a2c);-webkit-background-clip:text;background-clip:text;color:transparent}.tag{font-size:.78rem;letter-spacing:.22em;color:var(--gold)}nav{position:fixed;z-index:50;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;padding:calc(14px + env(safe-area-inset-top)) clamp(20px,5vw,60px) 14px;transition:.35s}nav.scrolled{background:#050505df;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.logo{font:1.2rem var(--serif);letter-spacing:.14em}nav ul{display:flex;gap:25px;list-style:none;padding:0;margin:0;font-size:.84rem;color:var(--mut)}nav ul a:hover{color:var(--gold2)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:14px 25px;border:1px solid var(--gold);font:600 .88rem var(--sans);letter-spacing:.055em;background:transparent;color:var(--tx);cursor:pointer;transition:transform .3s,box-shadow .3s,background .3s}.btn:hover{transform:translateY(-3px);box-shadow:0 8px 30px #c9a45c33}.btn.primary{background:linear-gradient(120deg,#8a6a2c,#f1d98f 45%,#c9a45c);color:#120d04;border-color:transparent;box-shadow:0 0 25px #c9a45c28}.hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;overflow:hidden}.hero-bg{position:absolute;inset:-7%;background:url('https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=2200&q=90') center 38%/cover;filter:brightness(.56);transform:scale(1.06)}.hero:after{content:'';position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,#050505 5%,#050505a8 58%,#05050540),linear-gradient(0deg,#050505 0%,transparent 45%,#05050555)}.smoke{position:absolute;inset:0;z-index:1;overflow:hidden;pointer-events:none}.smoke i{position:absolute;width:65vw;height:28vw;left:-70vw;top:20%;border-radius:50%;background:radial-gradient(closest-side,#ffffff19,transparent);filter:blur(30px);animation:drift 32s linear infinite}.smoke i:nth-child(2){top:60%;animation-delay:-13s;animation-duration:40s;opacity:.6}.smoke i:nth-child(3){top:40%;animation-delay:-25s;animation-duration:48s;opacity:.4}@keyframes drift{to{transform:translateX(230vw) translateY(-5vh)}}.hero-content{position:relative;z-index:2}.hero-line{width:min(210px,45vw);height:2px;background:linear-gradient(90deg,#8a6a2c,#f1d98f,#8a6a2c);box-shadow:0 0 22px #f1d98f66}.hero h1{font-size:clamp(3.2rem,9vw,7.5rem);max-width:11ch;margin:20px 0}.hero h1 span{display:block;overflow:hidden}.hero h1 b{display:block;font-weight:500}.hero .lead{font-size:1.08rem;margin-bottom:30px}.actions{display:flex;flex-wrap:wrap;gap:13px}.scrollcue{position:absolute;z-index:3;bottom:27px;left:50%;width:1px;height:55px;background:linear-gradient(var(--gold2),transparent);animation:cue 2s infinite}@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}.intro{position:absolute;inset:0;z-index:5;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#050505;pointer-events:none}.intro b{font:clamp(2rem,8vw,5.5rem) var(--serif);letter-spacing:.16em}.intro small{font-size:.75rem;letter-spacing:.36em;color:var(--gold);margin-top:15px}.skip{position:fixed;z-index:70;right:15px;top:85px;padding:9px 14px;background:#080706cc;border:1px solid var(--line);color:var(--tx);display:none;cursor:pointer}.exp{background:linear-gradient(var(--bg),var(--bg2))}.split{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(30px,6vw,85px);align-items:center}.stack{height:clamp(390px,55vw,630px);position:relative}.photo{position:absolute;overflow:hidden;border:1px solid var(--line);background:#17130e}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1s}.photo:hover img{transform:scale(1.05)}.photo.a{inset:0 22% 18% 0}.photo.b{inset:30% 0 0 38%;box-shadow:0 30px 60px #000b}.facts{display:flex;gap:25px;flex-wrap:wrap;margin-top:32px}.facts div{border-left:1px solid var(--gold);padding-left:13px;color:var(--mut);font-size:.85rem}.facts strong{display:block;color:var(--tx);font:1.5rem var(--serif)}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;margin-top:44px}.card{border:1px solid var(--line);background:#0a0907;transition:.4s;transform-style:preserve-3d}.card:hover{border-color:var(--gold);transform:translateY(-7px)}.card img{display:block;width:100%;height:195px;object-fit:cover}.card-body{padding:20px 21px 24px}.card h3{font-size:1.35rem;margin:0 0 8px}.card p{font-size:.88rem;color:var(--mut);min-height:46px}.price{font:1.35rem var(--serif);color:var(--gold2);margin-top:13px}.gallery-section{background:var(--bg2)}.gallery{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:230px;gap:13px;margin-top:44px}.gallery figure{margin:0;position:relative;overflow:hidden;border:1px solid var(--line)}.gallery figure:first-child{grid-column:span 2;grid-row:span 2}.gallery figure:nth-child(4){grid-row:span 2}.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .7s,filter .7s;filter:brightness(.82)}.gallery figure:hover img{transform:scale(1.06);filter:brightness(1)}.gallery figcaption{position:absolute;bottom:12px;left:14px;font:1.1rem var(--serif);text-shadow:0 2px 9px #000}.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:28px;margin-top:42px}.person img{width:100%;aspect-ratio:3/4;object-fit:cover;border:1px solid var(--line);filter:saturate(.8)}.person h3{font-size:1.45rem;margin:14px 0 4px}.person em{font-style:normal;color:var(--gold);font-size:.85rem}.person p{color:var(--mut);font-size:.9rem;margin-top:6px}#agendar{background:radial-gradient(70% 50% at 50% 0,#c9a45c18,transparent),var(--bg2)}.booking{max-width:850px;border:1px solid var(--line);background:#050505bd;padding:clamp(22px,4vw,46px);margin-top:35px}.steps{display:flex;gap:8px;margin-bottom:28px}.steps i{height:2px;flex:1;background:var(--line)}.steps i.active{background:var(--gold2)}.booking h3{font-size:1.5rem;margin:0 0 18px}.options{display:flex;flex-wrap:wrap;gap:10px}.option{padding:11px 16px;border:1px solid var(--line);background:none;color:var(--tx);cursor:pointer}.option:hover{border-color:var(--gold)}.option.selected{background:var(--gold);color:#120d04;border-color:var(--gold)}.option:disabled{opacity:.35;cursor:not-allowed}.booking input{width:100%;padding:14px;margin:0 0 12px;background:#000;border:1px solid var(--line);color:var(--tx)}.booking input[type=date]{color-scheme:dark;max-width:270px}.booking .navrow{display:flex;justify-content:space-between;gap:12px;margin-top:25px}.summary{color:var(--mut);margin-bottom:16px}.summary b{color:var(--tx)}.error{color:#e58b7b;font-size:.85rem;min-height:1.4em}.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;margin-top:42px}.reviews blockquote{margin:0;padding:26px;border:1px solid var(--line);background:#0a0907}.stars{color:var(--gold2);letter-spacing:4px}.reviews footer{color:var(--gold);margin-top:15px;font-size:.85rem}.local{background:var(--bg2)}.locgrid{display:grid;grid-template-columns:1fr 1.2fr;gap:35px;margin-top:35px}.locgrid dl{display:grid;gap:18px;margin:0}.locgrid dt{font-size:.85rem;color:var(--gold)}.locgrid dd{margin:0}.map{min-height:300px;border:1px solid var(--line);display:grid;place-content:center;text-align:center;background:linear-gradient(135deg,#14110c,#080706)}footer.site{border-top:1px solid var(--line);padding:55px clamp(20px,6vw,90px) 100px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;color:var(--mut);font-size:.88rem}.footcol{display:flex;flex-direction:column;gap:7px}.footcol a:hover{color:var(--gold2)}.mobile-cta{display:none}.reveal{opacity:0;transform:translateY(35px)}@media(max-width:860px){nav ul{display:none}.split,.locgrid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr);grid-auto-rows:185px}.gallery figure:nth-child(4){grid-row:span 1}.gallery figure:first-child{grid-row:span 2}.mobile-cta{display:block;position:fixed;z-index:45;bottom:calc(12px + env(safe-area-inset-bottom));left:14px;right:14px}.mobile-cta .btn{width:100%}footer.site{padding-bottom:110px}}@media(max-width:480px){.hero h1{font-size:clamp(3rem,15vw,5rem)}.stack{height:390px}.gallery{grid-auto-rows:150px}.booking .navrow{flex-direction:column}.booking .navrow .btn{width:100%}}@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}}
-</style></head>
+:root{--bg:#050505;--bg2:#0c0a07;--gold:#c9a45c;--gold2:#f1d98f;--gold3:#8a6a2c;--tx:#f4f0e8;--mut:#a39d90;--line:rgba(201,164,92,.28);
+--gl:linear-gradient(120deg,var(--gold3),var(--gold2) 45%,var(--gold) 60%,var(--gold3));
+--serif:"Bodoni Moda",Georgia,serif;--sans:"Manrope",system-ui,sans-serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px;overflow-x:clip}
+body{background:var(--bg);color:var(--tx);font:300 16px/1.65 var(--sans);overflow-x:clip}
+h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.05}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--gold2);outline-offset:3px}
+section{position:relative;padding:clamp(80px,12vw,160px) clamp(20px,6vw,90px)}
+.wrap{max-width:1200px;margin:0 auto}
+h2{font-size:clamp(2.2rem,5.5vw,4.4rem);margin-bottom:20px}
+.lead{color:var(--mut);max-width:52ch}
+.gold{background:var(--gl);-webkit-background-clip:text;background-clip:text;color:transparent}
+/* foto: usa arquivo em img/ se existir, senão fundo de luz */
+.ph{position:relative;overflow:hidden;background:radial-gradient(120% 90% at 30% 20%,#2a2116,#0a0806 70%);}
+.ph .im{position:absolute;inset:-8% 0;background-size:cover;background-position:center;opacity:0;transition:opacity 1s}
+.ph.ok .im{opacity:1}
+.ph::after{content:attr(data-label);position:absolute;left:14px;bottom:12px;font-size:.72rem;color:rgba(244,240,232,.45);letter-spacing:.04em}
+.ph.ok::after{display:none}
+.ph::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.15),rgba(0,0,0,.55));pointer-events:none}
+/* nav */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:calc(14px + env(safe-area-inset-top,0px)) clamp(20px,5vw,60px) 14px;transition:background .4s}
+nav.s{background:rgba(5,5,5,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.logo{font-family:var(--serif);font-size:1.25rem;letter-spacing:.14em}
+nav ul{display:flex;gap:28px;list-style:none;padding:0;font-size:.85rem}
+nav ul a{color:var(--mut);transition:color .3s}nav ul a:hover{color:var(--gold2)}
+@media(max-width:860px){nav ul{display:none}}
+/* botões */
+.btn{display:inline-block;position:relative;padding:16px 30px;border:1px solid var(--gold);font-weight:600;font-size:.9rem;letter-spacing:.06em;cursor:pointer;background:transparent;color:var(--tx);overflow:hidden;transition:transform .3s,box-shadow .4s,color .3s;font-family:var(--sans)}
+.btn.p{background:var(--gl);background-size:200% 100%;color:#120d04;border-color:transparent;box-shadow:0 0 0 rgba(201,164,92,0);animation:glow 3.2s ease-in-out infinite}
+.btn.p:hover{background-position:100% 0;transform:translateY(-2px)}
+.btn:not(.p):hover{background:rgba(201,164,92,.12);color:var(--gold2)}
+@keyframes glow{50%{box-shadow:0 0 34px rgba(241,217,143,.45)}}
+/* hero */
+#inicio{min-height:100svh;display:flex;align-items:center;padding-top:110px;overflow:hidden}
+#inicio .bg{position:absolute;inset:0}
+#inicio .bg .im{inset:-10% 0}
+.spot{position:absolute;inset:0;z-index:2;background:radial-gradient(40% 55% at 70% 30%,rgba(241,217,143,.2),transparent 70%),linear-gradient(90deg,#050505 8%,rgba(5,5,5,.35) 70%,#050505 130%);pointer-events:none}
+.smoke{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+.smoke i{position:absolute;width:60vmax;height:30vmax;border-radius:50%;background:radial-gradient(closest-side,rgba(255,255,255,.12),transparent);filter:blur(30px);left:-40vmax;animation:drift 26s linear infinite}
+.smoke i:nth-child(2){top:40%;animation-duration:34s;animation-delay:-12s;opacity:.7}
+.smoke i:nth-child(3){top:70%;animation-duration:42s;animation-delay:-24s;opacity:.5}
+@keyframes drift{to{transform:translateX(150vw) translateY(-6vh)}}
+.hero-c{position:relative;z-index:5}
+.hero-c h1{font-size:clamp(2.8rem,9vw,7.4rem);max-width:11ch;margin:18px 0 22px}
+.hero-c h1 span{display:block;overflow:hidden}.hero-c h1 b{display:block;font-weight:500}
+.hero-c .lead{font-size:1.1rem;margin-bottom:34px}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.tag{font-size:.8rem;letter-spacing:.2em;color:var(--gold)}
+.hero-logo{width:min(220px,50vw);height:1px;background:var(--gl);box-shadow:0 0 22px var(--gold2);transform-origin:left}
+.scrollcue{position:absolute;z-index:5;bottom:26px;left:50%;width:1px;height:54px;background:linear-gradient(var(--gold2),transparent);animation:cue 2s infinite}
+@keyframes cue{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+/* experiência */
+#experiencia{background:linear-gradient(var(--bg),var(--bg2))}
+.exp{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(30px,6vw,90px);align-items:center}
+.exp .stack{position:relative;height:clamp(380px,60vw,640px)}
+.exp .stack .ph{position:absolute;border:1px solid var(--line)}
+.exp .a{inset:0 22% 18% 0}.exp .b{inset:30% 0 0 38%;box-shadow:0 30px 60px rgba(0,0,0,.7)}
+.facts{display:flex;gap:30px;flex-wrap:wrap;margin-top:34px}
+.facts div{border-left:1px solid var(--gold);padding-left:14px;font-size:.9rem;color:var(--mut)}
+.facts strong{display:block;color:var(--tx);font-family:var(--serif);font-size:1.5rem;font-weight:500}
+@media(max-width:860px){.exp{grid-template-columns:1fr}}
+/* serviços */
+.sv{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:22px;margin-top:50px}
+.card{position:relative;border:1px solid var(--line);background:#0a0907;transform-style:preserve-3d;transition:border-color .4s,transform .4s}
+.card:hover{border-color:var(--gold)}
+.card .ph{height:190px}
+.card div.t{padding:20px 22px 24px}
+.card h3{font-size:1.4rem;margin-bottom:6px}
+.card p{font-size:.88rem;color:var(--mut)}
+.card .pr{margin-top:14px;font-family:var(--serif);font-size:1.3rem}
+/* galeria */
+#galeria{background:var(--bg2)}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:240px;gap:14px;margin-top:50px}
+.gal .ph{border:1px solid var(--line)}
+.gal .ph:nth-child(1){grid-column:span 2;grid-row:span 2}.gal .ph:nth-child(4){grid-row:span 2}.gal .ph:nth-child(6){grid-column:span 2}
+.gal .ph span{position:absolute;z-index:2;left:14px;top:12px;font-family:var(--serif);font-size:1.1rem}
+@media(max-width:860px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px}.gal .ph:nth-child(6){grid-column:span 2}}
+/* equipe */
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:30px;margin-top:50px}
+.team .ph{aspect-ratio:3/4;margin-bottom:18px;border:1px solid var(--line)}
+.team h3{font-size:1.5rem}.team em{color:var(--gold);font-style:normal;font-size:.85rem}
+.team p{color:var(--mut);font-size:.9rem;margin-top:6px}
+/* agendamento */
+#agendar{background:radial-gradient(70% 50% at 50% 0,rgba(201,164,92,.1),transparent),var(--bg2)}
+.bk{border:1px solid var(--line);background:rgba(5,5,5,.7);padding:clamp(22px,4vw,48px);margin-top:44px;max-width:860px}
+.steps{display:flex;gap:8px;margin-bottom:30px}
+.steps i{flex:1;height:2px;background:var(--line);transition:background .4s}.steps i.on{background:var(--gold2)}
+.bk h3{font-size:1.5rem;margin-bottom:18px}
+.opts{display:flex;flex-wrap:wrap;gap:10px}
+.opt{padding:12px 18px;border:1px solid var(--line);background:none;color:var(--tx);font:inherit;font-size:.9rem;cursor:pointer;transition:.25s}
+.opt:hover{border-color:var(--gold)}.opt.sel{background:var(--gold);color:#120d04;border-color:var(--gold)}
+.opt:disabled{opacity:.3;text-decoration:line-through;cursor:not-allowed}
+.bk input{width:100%;padding:14px;margin-bottom:12px;background:#000;border:1px solid var(--line);color:var(--tx);font:inherit}
+.bk input[type=date]{color-scheme:dark;max-width:260px;display:block;margin-bottom:20px}
+.nav2{display:flex;justify-content:space-between;margin-top:28px;gap:10px}
+.sum{color:var(--mut);margin-bottom:16px}.sum b{color:var(--tx);font-weight:600}
+.err{color:#e58b7b;font-size:.85rem;min-height:1.4em;margin-top:10px}
+/* avaliações */
+.rv{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;margin-top:50px}
+.rv blockquote{border:1px solid var(--line);padding:28px;background:#0a0907}
+.stars{color:var(--gold2);letter-spacing:4px;margin-bottom:12px}
+.rv footer{margin-top:16px;color:var(--gold);font-size:.85rem}
+/* local */
+#local{background:var(--bg2)}
+.loc{display:grid;grid-template-columns:1fr 1.2fr;gap:40px;margin-top:40px}
+.loc dl{display:grid;gap:18px}.loc dt{color:var(--gold);font-size:.85rem}.loc dd{margin:0}
+.map{min-height:340px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);background:repeating-linear-gradient(45deg,#0c0a07 0 18px,#100d09 18px 36px)}
+@media(max-width:860px){.loc{grid-template-columns:1fr}}
+footer.f{padding:60px clamp(20px,6vw,90px) 110px;border-top:1px solid var(--line);display:flex;flex-wrap:wrap;justify-content:space-between;gap:30px;color:var(--mut);font-size:.9rem}
+footer.f nav{all:unset}footer.f a:hover{color:var(--gold2)}
+.fx{display:flex;flex-direction:column;gap:6px}
+.stick{position:fixed;z-index:60;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom,0px));display:none}
+.stick .btn{width:100%;text-align:center}
+@media(max-width:860px){.stick{display:block}}
+.intro-logo{position:absolute;inset:0;z-index:6;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;font-family:var(--serif);font-size:clamp(2rem,8vw,5.5rem);letter-spacing:.18em;opacity:0;pointer-events:none;filter:drop-shadow(0 0 30px rgba(241,217,143,.45))}
+.intro-logo small{font:300 .8rem var(--sans);letter-spacing:.35em;color:var(--gold);margin-top:16px}
+.skip{position:fixed;z-index:70;right:16px;top:calc(76px + env(safe-area-inset-top,0px));display:none;padding:9px 16px;border:1px solid var(--line);background:rgba(5,5,5,.7);color:var(--tx);font:600 .78rem var(--sans);cursor:pointer;backdrop-filter:blur(6px)}
+.skip:hover{border-color:var(--gold2)}
+.rig{position:absolute;inset:0;z-index:4;pointer-events:none}
+.tool{position:absolute;left:50%;top:50%;height:min(60vh,500px);aspect-ratio:1/2;filter:drop-shadow(0 20px 40px rgba(0,0,0,.85)) drop-shadow(0 0 28px rgba(241,217,143,.22))}
+.tool svg{width:100%;height:100%;overflow:visible}
+.tool b{position:absolute;left:50%;bottom:-40px;transform:translateX(-50%);font:italic 500 1.25rem var(--serif);color:var(--gold2);white-space:nowrap}
+.prog{position:absolute;z-index:6;right:18px;top:50%;width:2px;height:140px;margin-top:-70px;background:var(--line)}
+.prog i{display:block;height:100%;background:var(--gl);transform-origin:top;transform:scaleY(0)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
 <body>
-<nav id="nav"><a class="logo" href="#inicio">MAISON AURUM</a><ul><li><a href="#experiencia">Experiência</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#local">Localização</a></li></ul><a class="btn" href="#agendar">Agendar</a></nav>
-<section class="hero" id="inicio"><div class="hero-bg"></div><div class="smoke"><i></i><i></i><i></i></div><div class="wrap hero-content"><div class="hero-line"></div><p class="tag">BARBEARIA PREMIUM</p><h1 id="heroTitle"><span><b>Seu estilo.</b></span><span><b class="gold">Sua identidade.</b></span></h1><p class="lead">Corte, barba e cuidado com hora marcada, em um ambiente feito para você relaxar enquanto o barbeiro trabalha.</p><div class="actions"><a class="btn primary" href="#agendar">Agendar horário</a><a class="btn" href="#experiencia">Conhecer a barbearia</a></div></div><div class="intro" id="intro"><b class="gold">MAISON AURUM</b><small>BARBEARIA PREMIUM</small></div><div class="scrollcue" id="cue"></div></section><button class="skip" id="skip">Pular abertura</button>
-<section class="exp" id="experiencia"><div class="wrap split"><div class="stack"><div class="photo a"><img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=1000&q=85" alt="Interior de barbearia premium" loading="lazy"></div><div class="photo b"><img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85" alt="Cadeira e ambiente de barbearia" loading="lazy"></div></div><div class="reveal"><p class="tag">MAIS QUE UM CORTE</p><h2>Uma pausa para você. <span class="gold">Uma experiência para lembrar.</span></h2><p class="lead">Um ambiente pensado nos detalhes, atendimento atencioso e profissionais que entendem que estilo é identidade. Aqui, cada atendimento merece tempo e cuidado.</p><div class="facts"><div><strong>Premium</strong>ambiente exclusivo</div><div><strong>Precisão</strong>em cada detalhe</div><div><strong>Seu tempo</strong>com hora marcada</div></div></div></div></section>
-<section id="servicos"><div class="wrap"><p class="tag">CUIDADO E PRECISÃO</p><h2>Nossos serviços</h2><p class="lead">Escolha seu próximo visual. Valores demonstrativos, editáveis no código.</p><div class="cards" id="serviceCards"></div></div></section>
-<section class="gallery-section" id="galeria"><div class="wrap"><p class="tag">NOSSO TRABALHO</p><h2>Galeria de cortes</h2><p class="lead">Inspirações de estilos clássicos e contemporâneos.</p><div class="gallery" id="gallery"></div></div></section>
-<section id="equipe"><div class="wrap"><p class="tag">QUEM CUIDA DO SEU ESTILO</p><h2>Nossa equipe</h2><p class="lead">Profissionais dedicados à técnica, ao detalhe e à sua experiência.</p><div class="team" id="team"></div></div></section>
-<section id="agendar"><div class="wrap"><p class="tag">RESERVE SEU MOMENTO</p><h2>Agende seu horário</h2><p class="lead">Escolha serviço, profissional e horário. A solicitação será encaminhada pelo WhatsApp.</p><div class="booking" id="booking"><div class="steps"><i></i><i></i><i></i><i></i></div><div id="bookingBody"></div><p class="error" id="error" role="alert"></p><div class="navrow"><button class="btn" id="back" type="button">Voltar</button><button class="btn primary" id="next" type="button">Continuar</button></div></div></div></section>
-<section id="avaliacoes"><div class="wrap"><p class="tag">EXPERIÊNCIA DE QUEM JÁ VEIO</p><h2>O que dizem os clientes</h2><div class="reviews"><blockquote><div class="stars">★★★★★</div><p>“Atendimento cuidadoso, ambiente incrível e corte impecável.”</p><footer>Cliente Maison Aurum</footer></blockquote><blockquote><div class="stars">★★★★★</div><p>“Pontualidade e atenção aos detalhes. Uma experiência diferente.”</p><footer>Cliente Maison Aurum</footer></blockquote><blockquote><div class="stars">★★★★★</div><p>“Saí muito satisfeito com o resultado. Voltarei com certeza.”</p><footer>Cliente Maison Aurum</footer></blockquote></div></div></section>
-<section class="local" id="local"><div class="wrap"><p class="tag">ESTAMOS À SUA ESPERA</p><h2>Venha nos visitar</h2><div class="locgrid"><dl><div><dt>Endereço</dt><dd>Rua Exemplo, 123, Centro<br>Franca, SP</dd></div><div><dt>Horários</dt><dd>Segunda a sexta, 9h às 20h<br>Sábado, 9h às 18h</dd></div><div><dt>WhatsApp</dt><dd><a href="https://wa.me/5516999999999">(16) 99999-9999</a></dd></div><div><dt>Instagram</dt><dd><a href="https://instagram.com/">@maisonaurum</a></dd></div></dl><div class="map"><p class="tag">MAISON AURUM · FRANCA</p><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Franca+SP" target="_blank" rel="noopener">Abrir no Google Maps</a></div></div></div></section>
-<footer class="site"><div class="footcol"><span class="logo">MAISON AURUM</span><span>Barbearia premium · Franca, SP</span></div><div class="footcol"><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#agendar">Agendar</a></div><div class="footcol"><a href="https://wa.me/5516999999999">WhatsApp</a><a href="https://instagram.com/">Instagram</a><span>© 2026 Maison Aurum</span></div></footer><div class="mobile-cta"><a class="btn primary" href="#agendar">Agendar horário</a></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<nav id="nav"><a class="logo" href="#inicio">MAISON AURUM</a>
+<ul><li><a href="#experiencia">Experiência</a></li><li><a href="#servicos">Serviços</a></li><li><a href="#galeria">Galeria</a></li><li><a href="#equipe">Equipe</a></li><li><a href="#local">Localização</a></li></ul>
+<a class="btn" href="#agendar" style="padding:10px 20px">Agendar</a></nav>
+
+<section id="inicio">
+ <div class="bg ph" data-photo="hero" data-label="img/hero.jpg"><div class="im"></div></div>
+ <div class="spot"></div><div class="smoke"><i></i><i></i><i></i></div>
+ <div class="wrap hero-c">
+  <div class="hero-logo"></div>
+  <p class="tag" style="margin-top:18px">BARBEARIA PREMIUM</p>
+  <h1 id="h1"><span><b>Seu estilo.</b></span><span><b class="gold">Sua identidade.</b></span></h1>
+  <p class="lead">Corte, barba e cuidado com hora marcada, em um ambiente feito para você relaxar enquanto o barbeiro trabalha.</p>
+  <div class="cta"><a class="btn p" href="#agendar">Agendar horário</a><a class="btn" href="#experiencia">Conhecer a barbearia</a></div>
+ </div>
+ <div class="rig" aria-hidden="true">
+  <svg width="0" height="0" style="position:absolute"><defs><linearGradient id="mg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6b4f1f"/><stop offset=".35" stop-color="#f1d98f"/><stop offset=".6" stop-color="#c9a45c"/><stop offset="1" stop-color="#6b4f1f"/></linearGradient></defs></svg>
+  <div class="tool" id="t1"><svg viewBox="0 0 200 400"><rect x="58" y="20" width="84" height="270" rx="34" fill="#14110c" stroke="url(#mg)" stroke-width="3"/><rect x="70" y="44" width="9" height="210" rx="4" fill="url(#mg)" opacity=".8"/><rect x="92" y="60" width="40" height="18" rx="9" fill="url(#mg)"/><circle cx="104" cy="130" r="14" fill="none" stroke="url(#mg)" stroke-width="3"/><path d="M66 290h68l10 26H56z" fill="url(#mg)"/><rect x="56" y="316" width="88" height="34" fill="#14110c" stroke="url(#mg)" stroke-width="2"/><line x1="60" y1="338" x2="140" y2="338" stroke="url(#mg)" stroke-width="12" stroke-dasharray="3 3"/></svg><b>A máquina</b></div>
+  <div class="tool" id="t2"><svg viewBox="0 0 200 400"><g id="sA"><path d="M95 180L108 180L112 14Z" fill="url(#mg)"/><line x1="100" y1="180" x2="68" y2="272" stroke="url(#mg)" stroke-width="7" stroke-linecap="round"/><circle cx="62" cy="300" r="30" fill="none" stroke="url(#mg)" stroke-width="8"/></g><g id="sB"><path d="M92 180L105 180L88 14Z" fill="url(#mg)"/><line x1="100" y1="180" x2="132" y2="272" stroke="url(#mg)" stroke-width="7" stroke-linecap="round"/><circle cx="138" cy="300" r="30" fill="none" stroke="url(#mg)" stroke-width="8"/></g><circle cx="100" cy="180" r="7" fill="#14110c" stroke="url(#mg)" stroke-width="3"/></svg><b>A tesoura</b></div>
+  <div class="tool" id="t3"><svg viewBox="0 0 200 400"><rect x="84" y="190" width="32" height="200" rx="15" fill="#14110c" stroke="url(#mg)" stroke-width="3"/><g id="rz"><path d="M92 190L92 50Q92 20 114 12L108 190Z" fill="url(#mg)"/></g><circle cx="100" cy="190" r="9" fill="#14110c" stroke="url(#mg)" stroke-width="3"/><circle cx="100" cy="340" r="5" fill="url(#mg)"/></svg><b>A navalha</b></div>
+ </div>
+ <div class="prog"><i id="pg"></i></div>
+ <div class="intro-logo" id="il"><span class="gold">MAISON AURUM</span><small>BARBEARIA PREMIUM</small></div>
+ <div class="scrollcue" id="cue"></div>
+</section>
+
+<section id="experiencia"><div class="wrap exp">
+ <div class="stack">
+  <div class="ph a" data-photo="exp1" data-label="img/ambiente.jpg"><div class="im" data-px="40"></div></div>
+  <div class="ph b" data-photo="exp2" data-label="img/cadeira.jpg"><div class="im" data-px="-40"></div></div>
+ </div>
+ <div class="txt">
+  <h2>Uma tarde para você, <span class="gold">não só um corte.</span></h2>
+  <p class="lead">Cadeiras de couro, toalha quente, espelhos com luz quente e barbeiros que ouvem antes de cortar. Cada atendimento tem hora marcada e tempo suficiente para ser bem feito.</p>
+  <div class="facts"><div><strong>8 anos</strong>de casa</div><div><strong>3 barbeiros</strong>especialistas</div><div><strong>45 min</strong>por atendimento</div></div>
+ </div>
+</div></section>
+
+<section id="servicos"><div class="wrap">
+ <h2>Serviços</h2><p class="lead">Valores editáveis no arquivo, na lista SERVICES.</p>
+ <div class="sv" id="sv"></div>
+</div></section>
+
+<section id="galeria"><div class="wrap">
+ <h2>Galeria de cortes</h2><p class="lead">Trabalhos feitos na cadeira, do degradê mais limpo ao freestyle.</p>
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="equipe"><div class="wrap">
+ <h2>Nossa equipe</h2>
+ <div class="team" id="team"></div>
+</div></section>
+
+<section id="agendar"><div class="wrap">
+ <h2>Agende seu horário</h2><p class="lead">Escolha serviço, barbeiro e horário. A confirmação segue pelo WhatsApp.</p>
+ <div class="bk" id="bk">
+  <div class="steps"><i></i><i></i><i></i><i></i></div>
+  <div id="bkb"></div>
+  <p class="err" id="err" role="alert"></p>
+  <div class="nav2"><button class="btn" id="back" type="button">Voltar</button><button class="btn p" id="next" type="button">Continuar</button></div>
+ </div>
+</div></section>
+
+<section id="avaliacoes"><div class="wrap">
+ <h2>O que dizem os clientes</h2>
+ <div class="rv" id="rv"></div>
+</div></section>
+
+<section id="local"><div class="wrap">
+ <h2>Venha nos visitar</h2>
+ <div class="loc">
+  <dl>
+   <div><dt>Endereço</dt><dd>Rua Exemplo, 123, Centro<br>Franca, SP</dd></div>
+   <div><dt>Horários</dt><dd>Segunda a sexta, 9h às 20h<br>Sábado, 9h às 18h</dd></div>
+   <div><dt>WhatsApp</dt><dd><a href="https://wa.me/5516999999999">(16) 99999-9999</a></dd></div>
+   <div><dt>Instagram</dt><dd><a href="https://instagram.com/">@maisonaurum</a></dd></div>
+  </dl>
+  <div class="map"><a class="btn" href="https://www.google.com/maps/search/?api=1&query=Franca+SP" target="_blank" rel="noopener">Abrir no Google Maps</a></div>
+ </div>
+</div></section>
+
+<footer class="f">
+ <div class="fx"><span class="logo">MAISON AURUM</span><span>Barbearia premium em Franca, SP</span></div>
+ <div class="fx"><a href="#servicos">Serviços</a><a href="#equipe">Equipe</a><a href="#agendar">Agendar</a></div>
+ <div class="fx"><a href="https://wa.me/5516999999999">WhatsApp</a><a href="https://instagram.com/">Instagram</a><span>© 2026 Maison Aurum</span></div>
+</footer>
+<div class="stick"><a class="btn p" href="#agendar">Agendar horário</a></div>
+<button class="skip" id="skip" type="button">Pular abertura</button>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script>
-// DADOS DEMONSTRATIVOS: substitua telefone, endereço, equipe e preços pelos dados reais.
-const WHATS='5516999999999';
-const SERVICES=[['Corte masculino','Tesoura e máquina, com acabamento preciso.',60,'https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=85'],['Degradê (fade)','Low, mid ou high fade com transição limpa.',70,'https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=85'],['Barba completa','Desenho, toalha quente e cuidado com a pele.',50,'https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=85'],['Corte + barba','O atendimento completo em uma só cadeira.',100,'https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=800&q=85'],['Pigmentação','Definição do contorno e acabamento.',80,'https://images.unsplash.com/photo-1593702295094-aea9c2f1f1b1?auto=format&fit=crop&w=800&q=85'],['Sobrancelha','Alinhamento e acabamento cuidadoso.',25,'https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=800&q=85']];
-const GALLERY=[['Low fade','https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=1100&q=85'],['Corte clássico','https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=900&q=85'],['Barba','https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=900&q=85'],['Estilo moderno','https://images.unsplash.com/photo-1512690459411-b9245aed614b?auto=format&fit=crop&w=900&q=85'],['Acabamento','https://images.unsplash.com/photo-1622287162716-f311baa1a2b8?auto=format&fit=crop&w=900&q=85'],['Visual premium','https://images.unsplash.com/photo-1593702295094-aea9c2f1f1b1?auto=format&fit=crop&w=900&q=85']];
-const TEAM=[['Rafael Costa','Degradê e freestyle','Especialista em transições e acabamento.','https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=85'],['Bruno Alves','Barba e navalha','Precisão no desenho e cuidado em cada detalhe.','https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=800&q=85'],['Diego Martins','Cortes clássicos','Estilo atemporal com acabamento contemporâneo.','https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=85']];
-const $=s=>document.querySelector(s);$('#serviceCards').innerHTML=SERVICES.map(s=>`<article class="card"><img src="${s[3]}" alt="${s[0]}" loading="lazy"><div class="card-body"><h3>${s[0]}</h3><p>${s[1]}</p><div class="price">R$ ${s[2].toFixed(2).replace('.',',')}</div></div></article>`).join('');$('#gallery').innerHTML=GALLERY.map(g=>`<figure><img src="${g[1]}" alt="Referência de ${g[0]}" loading="lazy"><figcaption>${g[0]}</figcaption></figure>`).join('');$('#team').innerHTML=TEAM.map(t=>`<article class="person"><img src="${t[3]}" alt="${t[0]}" loading="lazy"><h3>${t[0]}</h3><em>${t[1]}</em><p>${t[2]}</p></article>`).join('');
-// Agendamento demonstrativo: disponibilidade real exige banco de dados/agenda integrada.
-const B={step:0,service:null,barber:null,date:'',time:'',name:'',phone:''};const HOURS=['09:00','10:00','11:00','13:00','14:00','15:00','16:00','17:00','18:00','19:00'];const option=(label,key,value,selected)=>`<button type="button" class="option ${selected?'selected':''}" data-key="${key}" data-value="${value}">${label}</button>`;
-function draw(){document.querySelectorAll('.steps i').forEach((el,i)=>el.classList.toggle('active',i<=B.step));$('#back').style.visibility=B.step?'visible':'hidden';$('#next').textContent=B.step===3?'Enviar solicitação':'Continuar';$('#error').textContent='';let html='';if(B.step===0)html=`<h3>Escolha o serviço</h3><div class="options">${SERVICES.map(s=>option(`${s[0]} · R$ ${s[2]}`,'service',s[0],B.service===s[0])).join('')}</div>`;if(B.step===1)html=`<h3>Escolha o barbeiro</h3><div class="options">${TEAM.map(t=>option(t[0],'barber',t[0],B.barber===t[0])).join('')}${option('Sem preferência','barber','Sem preferência',B.barber==='Sem preferência')}</div>`;if(B.step===2){const today=new Date();const min=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);html=`<h3>Data e horário</h3><input type="date" id="date" min="${min}" value="${B.date}" aria-label="Data">${B.date?`<div class="options">${HOURS.map(t=>option(t,'time',t,B.time===t)).join('')}</div>`:'<p class="summary">Escolha uma data para selecionar o horário desejado.</p>'}`}if(B.step===3)html=`<h3>Seus dados</h3><p class="summary"><b>${B.service}</b> com <b>${B.barber}</b><br>${B.date.split('-').reverse().join('/')} às ${B.time}</p><input id="name" placeholder="Seu nome" autocomplete="name" value="${B.name}"><input id="phone" placeholder="WhatsApp com DDD" inputmode="tel" autocomplete="tel" value="${B.phone}">` ;$('#bookingBody').innerHTML=html}
-$('#booking').addEventListener('click',e=>{const o=e.target.closest('.option');if(!o)return;B[o.dataset.key]=o.dataset.value;if(o.dataset.key==='date')B.time='';draw()});$('#booking').addEventListener('change',e=>{if(e.target.id==='date'){B.date=e.target.value;B.time='';draw()}});$('#back').onclick=()=>{B.step=Math.max(0,B.step-1);draw()};$('#next').onclick=()=>{const err=$('#error');if(B.step===0&&!B.service)return err.textContent='Escolha um serviço para continuar.';if(B.step===1&&!B.barber)return err.textContent='Escolha um barbeiro para continuar.';if(B.step===2&&!(B.date&&B.time))return err.textContent='Escolha uma data e um horário.';if(B.step===3){B.name=$('#name').value.trim();B.phone=$('#phone').value.replace(/\D/g,'');if(B.name.length<2)return err.textContent='Informe seu nome.';if(B.phone.length<10)return err.textContent='Informe um WhatsApp válido com DDD.';const msg=`Olá! Gostaria de solicitar um agendamento na Maison Aurum.%0AServiço: ${B.service}%0ABarbeiro: ${B.barber}%0AData: ${B.date.split('-').reverse().join('/')} às ${B.time}%0ANome: ${B.name}%0AWhatsApp: ${B.phone}`;$('#bookingBody').innerHTML='<h3 class="gold">Solicitação pronta!</h3><p class="summary">Abra o WhatsApp para enviar sua solicitação. O horário ainda precisa ser confirmado pela barbearia.</p><a class="btn primary" href="https://wa.me/'+WHATS+'?text='+encodeURIComponent(decodeURIComponent(msg))+'" target="_blank" rel="noopener">Enviar pelo WhatsApp</a>';$('.navrow').style.display='none';return}B.step++;draw()};draw();
-const nav=$('#nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>35),{passive:true});const reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;if(window.gsap&&!reduce){gsap.registerPlugin(ScrollTrigger);const mobile=innerWidth<860;gsap.set('#intro',{opacity:1});gsap.set('#heroTitle b',{yPercent:115});gsap.set(['.hero-content .tag','.hero-content .lead','.hero-content .actions'],{opacity:0,y:22});const intro=gsap.timeline({scrollTrigger:{trigger:'#inicio',start:'top top',end:mobile?'+=160%':' +=220%'.trim(),pin:true,scrub:.65,anticipatePin:1,onUpdate:s=>{const skip=$('#skip');skip.style.display=s.progress>0&&s.progress<.96?'block':'none';$('#cue').style.opacity=s.progress>.02?0:1}}});intro.to('#intro',{opacity:1,duration:.35}).to('#intro',{opacity:0,scale:1.08,duration:.7},.8).to('.hero-bg',{scale:1,duration:1.4},.8).to('#heroTitle b',{yPercent:0,stagger:.2,duration:.7},1.5).to(['.hero-content .tag','.hero-content .lead','.hero-content .actions'],{opacity:1,y:0,stagger:.15,duration:.55},2.2);$('#skip').onclick=()=>{const st=ScrollTrigger.getById(intro.scrollTrigger.vars.id);const trigger=ScrollTrigger.getAll().find(x=>x.trigger===$('#inicio'));if(trigger)scrollTo({top:trigger.end+2,behavior:'auto'})};gsap.utils.toArray('.reveal').forEach(el=>gsap.fromTo(el,{y:55,opacity:0},{y:0,opacity:1,duration:1,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 78%'}}));gsap.utils.toArray('.card,.gallery figure,.person,.reviews blockquote').forEach((el,i)=>gsap.fromTo(el,{y:45,opacity:0},{y:0,opacity:1,duration:.8,delay:(i%4)*.07,ease:'power3.out',scrollTrigger:{trigger:el,start:'top 88%'}}));gsap.utils.toArray('.photo img').forEach(img=>gsap.fromTo(img,{yPercent:-5},{yPercent:5,ease:'none',scrollTrigger:{trigger:img.parentElement,scrub:true}}));if(!mobile&&matchMedia('(hover:hover)').matches)document.querySelectorAll('.card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;gsap.to(card,{rotateY:x*5,rotateX:-y*5,transformPerspective:700,duration:.35})});card.addEventListener('mouseleave',()=>gsap.to(card,{rotateX:0,rotateY:0,duration:.5}))})}else{$('#intro').style.display='none';document.querySelectorAll('.reveal').forEach(e=>{e.style.opacity=1;e.style.transform='none'})}
-</script></body></html>
+/* ===== CONTEÚDO EDITÁVEL ===== */
+const WHATS="5516999999999";
+const SERVICES=[
+["Corte masculino","Tesoura e máquina, acabamento na navalha.",60,"corte"],
+["Degradê (fade)","Low, mid ou high, com transição limpa.",70,"fade"],
+["Barba completa","Toalha quente, desenho e hidratação.",50,"barba"],
+["Corte + barba","O atendimento completo em uma só cadeira.",100,"combo"],
+["Pigmentação","Cobre falhas e define o contorno.",80,"pigmento"],
+["Sobrancelha","Alinhamento na navalha.",25,"sobrancelha"],
+["Hidratação capilar","Tratamento para fio e couro cabeludo.",45,"hidratacao"]];
+const GALLERY=[["Low fade","low"],["Mid fade","mid"],["High fade","high"],["Corte social","social"],["Freestyle","free"],["Barba desenhada","barba2"]];
+const TEAM=[["Rafael Costa","Degradê e freestyle","Dez anos de cadeira. Referência em transições limpas.","rafael"],["Bruno Alves","Barba e navalha","Especialista em barba desenhada e toalha quente.","bruno"],["Diego Martins","Corte social","Cortes clássicos e acabamento de precisão.","diego"]];
+const REVIEWS=[["Melhor degradê que já fiz. Saí com a certeza de que volto todo mês.","Lucas M."],["Ambiente impecável e o horário foi respeitado à risca.","André P."],["O Bruno entende de barba como poucos. Atendimento nota dez.","Thiago S."]];
+/* fotos: coloque os arquivos na pasta img/ do projeto. Sem arquivo, aparece um fundo de luz. */
+const PHOTOS={hero:"img/hero.jpg",exp1:"img/ambiente.jpg",exp2:"img/cadeira.jpg"};
+SERVICES.forEach(s=>PHOTOS["s_"+s[3]]="img/servico-"+s[3]+".jpg");
+GALLERY.forEach(g=>PHOTOS["g_"+g[1]]="img/corte-"+g[1]+".jpg");
+TEAM.forEach(t=>PHOTOS["t_"+t[3]]="img/barbeiro-"+t[3]+".jpg");
+/* gancho para banco de dados (Supabase, Firebase, API própria) */
+async function saveBooking(data){/* await fetch("/api/agendamentos",{method:"POST",body:JSON.stringify(data)}); */return true}
+
+/* ===== RENDER ===== */
+const $=(s,r=document)=>r.querySelector(s);
+const ph=(k,l,c="")=>`<div class="ph ${c}" data-photo="${k}" data-label="${l}"><div class="im"></div></div>`;
+$("#sv").innerHTML=SERVICES.map(s=>`<article class="card">${ph("s_"+s[3],"img/servico-"+s[3]+".jpg")}<div class="t"><h3>${s[0]}</h3><p>${s[1]}</p><div class="pr gold">R$ ${s[2]}</div></div></article>`).join("");
+$("#gal").innerHTML=GALLERY.map(g=>`<div class="ph" data-photo="g_${g[1]}" data-label="img/corte-${g[1]}.jpg"><div class="im" data-px="30"></div><span>${g[0]}</span></div>`).join("");
+$("#team").innerHTML=TEAM.map(t=>`<article>${ph("t_"+t[3],"img/barbeiro-"+t[3]+".jpg")}<h3>${t[0]}</h3><em>${t[1]}</em><p>${t[2]}</p></article>`).join("");
+$("#rv").innerHTML=REVIEWS.map(r=>`<blockquote><div class="stars" aria-label="5 estrelas">★★★★★</div><p>${r[0]}</p><footer>${r[1]}</footer></blockquote>`).join("");
+document.querySelectorAll(".ph[data-photo]").forEach(el=>{
+ const u=PHOTOS[el.dataset.photo];if(!u)return;
+ const i=new Image();i.onload=()=>{el.querySelector(".im").style.backgroundImage=`url(${u})`;el.classList.add("ok")};i.src=u});
+
+/* ===== AGENDAMENTO ===== */
+const B={step:0,service:null,barber:null,date:"",time:"",name:"",phone:""};
+const HOURS=["09:00","10:00","11:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"];
+function taken(d,b,t){let h=0;for(const c of d+b+t)h=(h*31+c.charCodeAt(0))%97;return h%4===0} /* simulação até ligar o banco */
+const opt=(l,k,v,sel,dis)=>`<button type="button" class="opt ${sel?"sel":""}" data-k="${k}" data-v="${v}" ${dis?"disabled":""}>${l}</button>`;
+function draw(){
+ document.querySelectorAll(".steps i").forEach((e,i)=>e.classList.toggle("on",i<=B.step));
+ $("#back").style.visibility=B.step?"visible":"hidden";
+ $("#next").textContent=B.step===3?"Confirmar agendamento":"Continuar";
+ $("#err").textContent="";
+ let h="";
+ if(B.step===0)h=`<h3>Escolha o serviço</h3><div class="opts">${SERVICES.map(s=>opt(`${s[0]}, R$ ${s[2]}`,"service",s[0],B.service===s[0])).join("")}</div>`;
+ if(B.step===1)h=`<h3>Escolha o barbeiro</h3><div class="opts">${TEAM.map(t=>opt(t[0],"barber",t[0],B.barber===t[0])).join("")}${opt("Sem preferência","barber","Sem preferência",B.barber==="Sem preferência")}</div>`;
+ if(B.step===2){const today=new Date().toISOString().slice(0,10);
+  h=`<h3>Data e horário</h3><input type="date" id="dt" min="${today}" value="${B.date}" aria-label="Data">${B.date?`<div class="opts">${HOURS.map(t=>opt(t,"time",t,B.time===t,taken(B.date,B.barber,t))).join("")}</div>`:`<p class="sum">Escolha uma data para ver os horários livres.</p>`}`}
+ if(B.step===3)h=`<h3>Seus dados</h3><p class="sum"><b>${B.service}</b> com <b>${B.barber}</b><br>${B.date.split("-").reverse().join("/")} às ${B.time}</p><input id="nm" placeholder="Nome" autocomplete="name" value="${B.name}"><input id="ph" placeholder="WhatsApp com DDD" inputmode="tel" autocomplete="tel" value="${B.phone}">`;
+ $("#bkb").innerHTML=h;
+}
+$("#bk").addEventListener("click",e=>{const o=e.target.closest(".opt");if(!o)return;B[o.dataset.k]=o.dataset.v;draw()});
+$("#bk").addEventListener("change",e=>{if(e.target.id==="dt"){B.date=e.target.value;B.time="";draw()}});
+$("#back").onclick=()=>{B.step--;draw()};
+$("#next").onclick=async()=>{
+ const e=$("#err");
+ if(B.step===0&&!B.service)return e.textContent="Escolha um serviço para continuar.";
+ if(B.step===1&&!B.barber)return e.textContent="Escolha um barbeiro para continuar.";
+ if(B.step===2&&!(B.date&&B.time))return e.textContent="Escolha data e horário para continuar.";
+ if(B.step===3){B.name=$("#nm").value.trim();B.phone=$("#ph").value.replace(/\D/g,"");
+  if(B.name.length<2)return e.textContent="Informe seu nome.";
+  if(B.phone.length<10)return e.textContent="Informe o WhatsApp com DDD.";
+  await saveBooking({...B});
+  const m=`Olá! Quero agendar: ${B.service} com ${B.barber}, dia ${B.date.split("-").reverse().join("/")} às ${B.time}. Nome: ${B.name}.`;
+  $("#bkb").innerHTML=`<h3 class="gold">Agendamento enviado</h3><p class="sum">${B.name}, falta só confirmar pelo WhatsApp.</p><a class="btn p" href="https://wa.me/${WHATS}?text=${encodeURIComponent(m)}" target="_blank" rel="noopener">Confirmar no WhatsApp</a>`;
+  $(".nav2").style.display="none";return}
+ B.step++;draw()};
+draw();
+
+/* ===== ANIMAÇÕES ===== */
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+const nav=$("#nav");addEventListener("scroll",()=>nav.classList.toggle("s",scrollY>40),{passive:true});
+if(window.gsap&&!reduce){
+ gsap.registerPlugin(ScrollTrigger);
+ const mob=innerWidth<860;
+ /* abertura: luz, título em máscara, botões */
+ /* abertura guiada pela rolagem: máquina > tesoura > navalha > título */
+ const skip=$("#skip"),pg=$("#pg");
+ gsap.set("#il",{opacity:0,scale:.92});
+ gsap.set("#inicio .bg",{opacity:.1});
+ gsap.set("#inicio .bg .im",{scale:1.4});
+ gsap.set(".spot",{opacity:0});
+ gsap.set(".tool",{xPercent:-50,yPercent:-50,opacity:0});
+ gsap.set(".hero-logo",{scaleX:0});
+ gsap.set("#h1 b",{yPercent:110});
+ gsap.set([".tag",".hero-c .lead",".cta .btn"],{opacity:0,y:26});
+ gsap.set("#sA",{svgOrigin:"100 180",rotation:-4});
+ gsap.set("#sB",{svgOrigin:"100 180",rotation:4});
+ gsap.set("#rz",{svgOrigin:"100 190",rotation:172});
+ const tl=gsap.timeline({defaults:{ease:"none"},scrollTrigger:{id:"intro",trigger:"#inicio",start:"top top",end:"+="+(mob?480:600)+"%",pin:true,scrub:.7,anticipatePin:1,
+  onUpdate:s=>{skip.style.display=s.progress>0&&s.progress<.97?"block":"none";$("#cue").style.opacity=s.progress>.02?0:1;pg.style.transform="scaleY("+s.progress+")"}}});
+ const inn=(id,r)=>({opacity:1,y:0,rotation:0,scale:1,duration:.9,ease:"power2.out"});
+ tl.to("#il",{opacity:1,scale:1,duration:.9},0)
+  .to("#il",{opacity:0,scale:1.1,duration:.5},1)
+  .to("#inicio .bg",{opacity:.35,duration:.6},1)
+  .to(".spot",{opacity:1,duration:.8},1)
+  /* 1. máquina */
+  .fromTo("#t1",{opacity:0,y:140,rotation:-24,scale:.8},inn(),1.3)
+  .to("#t1",{rotation:5,duration:.8},2.3)
+  .to("#t1",{opacity:0,y:-120,rotation:38,scale:.6,duration:.8},3.1)
+  /* 2. tesoura abre e fecha */
+  .fromTo("#t2",{opacity:0,y:140,rotation:22,scale:.8},inn(),3.3)
+  .to("#sA",{rotation:20,duration:.6},4.2).to("#sB",{rotation:-20,duration:.6},4.2)
+  .to("#sA",{rotation:-4,duration:.5},4.9).to("#sB",{rotation:4,duration:.5},4.9)
+  .to("#sA",{rotation:20,duration:.4},5.4).to("#sB",{rotation:-20,duration:.4},5.4)
+  .to("#t2",{opacity:0,y:-120,rotation:-38,scale:.6,duration:.8},5.9)
+  /* 3. navalha abre */
+  .fromTo("#t3",{opacity:0,y:140,rotation:-18,scale:.8},inn(),6.1)
+  .to("#rz",{rotation:0,duration:.9},7)
+  .to("#t3",{opacity:0,scale:1.5,y:-60,duration:.8},8.2)
+  /* 4. a barbearia e o título */
+  .to("#inicio .bg",{opacity:1,duration:.9},8.2)
+  .to("#inicio .bg .im",{scale:1,duration:1.6},8.2)
+  .to(".hero-logo",{scaleX:1,duration:.5},8.7)
+  .to(".tag",{opacity:1,y:0,duration:.5},8.8)
+  .to("#h1 b",{yPercent:0,duration:.7,stagger:.25},8.9)
+  .to([".hero-c .lead",".cta .btn"],{opacity:1,y:0,duration:.6,stagger:.15},9.7)
+  .to({},{duration:.6});
+ skip.onclick=()=>{const st=ScrollTrigger.getById("intro");scrollTo({top:st.end+1,behavior:"auto"})};
+ /* parallax das fotos */
+ document.querySelectorAll(".im[data-px]").forEach(el=>gsap.fromTo(el,{yPercent:-(+el.dataset.px)/4},{yPercent:(+el.dataset.px)/4,ease:"none",scrollTrigger:{trigger:el.parentElement,scrub:true}}));
+ /* seções: texto entra pelo lado, cards escalonados */
+ gsap.from(".exp .txt",{x:mob?0:90,opacity:0,duration:1.1,ease:"power3.out",scrollTrigger:{trigger:".exp",start:"top 70%"}});
+ gsap.from(".exp .a",{x:mob?0:-80,opacity:0,duration:1.1,scrollTrigger:{trigger:".exp",start:"top 70%"}});
+ gsap.from(".exp .b",{y:80,opacity:0,duration:1.2,delay:.2,scrollTrigger:{trigger:".exp",start:"top 70%"}});
+ [["#sv .card",".sv"],["#gal .ph","#gal"],["#team article","#team"],["#rv blockquote","#rv"]].forEach(([it,tr])=>
+  gsap.from(it,{y:70,opacity:0,duration:.9,stagger:.09,ease:"power3.out",scrollTrigger:{trigger:tr,start:"top 82%"}}));
+ /* fundo muda gradualmente e cards inclinam no desktop */
+ gsap.to("body",{backgroundColor:"#0a0806",ease:"none",scrollTrigger:{trigger:"#galeria",start:"top bottom",end:"top 30%",scrub:true}});
+ if(!mob&&matchMedia("(hover:hover)").matches)document.querySelectorAll(".card").forEach(c=>{
+  c.addEventListener("mousemove",e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;gsap.to(c,{rotateY:x*8,rotateX:-y*8,transformPerspective:700,duration:.4})});
+  c.addEventListener("mouseleave",()=>gsap.to(c,{rotateX:0,rotateY:0,duration:.6}))});
+}
+</script>
+</body>
+</html>
